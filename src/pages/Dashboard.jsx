@@ -16,6 +16,9 @@ import api from "../services/api";
 import CreatePostModal from "../components/posts/CreatePostModal";
 
 function Dashboard() {
+
+// Posts and users are loaded together so each post
+// can be displayed with its corresponding author information.
   const [posts, setPosts] = useState([]);
   const [users, setUsers] = useState([]);
   const [albums, setAlbums] = useState([]);

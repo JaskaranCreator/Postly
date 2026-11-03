@@ -71,7 +71,8 @@ function Posts() {
     }
   };
 
-  // Pagination
+// Client-side pagination displays 10 posts per page
+// without making a new API request for each page.
   const totalPages = Math.ceil(posts.length / postsPerPage);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;

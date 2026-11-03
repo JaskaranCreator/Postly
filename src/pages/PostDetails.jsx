@@ -22,6 +22,9 @@ function PostDetails() {
   const [editError, setEditError] = useState("");
   const [success, setSuccess] = useState("");
 
+
+  // Post, author, and comments are fetched together
+  // to display all related information on one page.
   useEffect(() => {
     const fetchDetails = async () => {
       try {

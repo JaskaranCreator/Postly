@@ -152,6 +152,9 @@ function Gallery() {
         </p>
       )}
 
+
+      {/* Lazy loading reduces initial image downloads.
+    The full-size image is shown only when a photo is opened. */}
       {/* Photo Grid */}
       {!loading && !error && filteredPhotos.length > 0 && (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
